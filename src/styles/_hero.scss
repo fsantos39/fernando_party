@@ -1,0 +1,10 @@
+.hero {
+    padding-top: 64px;
+    padding-bottom: 100px;
+    background-image: url(../images/fundo.png);
+
+    &__text {
+        margin-top: 64px;
+        margin-bottom: 64px;
+    }
+}
