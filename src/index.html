@@ -9,6 +9,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Paprika&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" href="styles/main.scss">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <title>Evento Aniversário</title>
 </head>
 <body>
@@ -16,7 +17,7 @@
         <div class="container">
             <img class="hero__logo" src="images/logo.png" alt="Fundo Site">
             <p class="hero__text">
-                Venha comemorar meu Aniversário em uma super festa que acontecerá em 314d 7537h 452242m 27134560s
+                Venha comemorar meu Aniversário em uma super festa que acontecerá em <br><span id="contador"></span>
             </p>
             <div class="infos">
                 <ul class="infos__list">
@@ -35,7 +36,52 @@
             </div>
         </div>
     </header>
-
+    <section class="evento evento--comida">
+        <div class="container" data-aos="zoom-left" data-aos-duration="3000">
+            <div class="evento__cardapio">
+                <h2 class="evento__cardapio__titulo">
+                    Buffet de Churrasco
+                </h2>
+                <p class="evento__cardapio__descricao">
+                    No buffet de churrasco serviremos o churrasco completo para os convidados, das entradas à sobremesa.
+                    Nossas sugestões de cardápio oferecem vários grupos de carne, acompanhamentos e sobremesas.
+                </p>
+            </div>
+            <img class="evento__imagem" src="./images/comida.png" alt="Foto de Churrasco">
+        </div>
+    </section>
+    <section class="evento evento--bebida evento--imagem-esquerda">
+        <div class="container" data-aos="zoom-right" data-aos-duration="3000">
+            <div class="evento__cardapio">
+                <h2 class="evento__cardapio__titulo">
+                    Bebidas
+                </h2>
+                <p class="evento__cardapio__descricao">
+                    As bebidas : Água; <br> 
+                    Sucos (Abacaxi, Limão e Laranja);<br>
+                    Refrigerantes; <br>
+                    Cervejas;<br>
+                    Drinks;<br>
+                    Destilados.
+                </p>
+            </div>
+            <img class="evento__imagem" src="./images/bebidas.png" alt="Foto das Bebidas">
+        </div>
+    </section>
+    <section class="evento evento--musica">
+        <div class="container" data-aos="zoom-left" data-aos-duration="3000">
+            <div class="evento__cardapio">
+                <h2 class="evento__cardapio__titulo">
+                    Musica Ao Vivo
+                </h2>
+                <p class="evento__cardapio__descricao">
+                    E para embalar este grande evento, musica ao vivo, com musicos ecléticos, com sucesso do: <br><br>MPB; <br>Sampa/Pagode; <br> Sertanejo.
+                </p>
+            </div>
+            <img class="evento__imagem" src="./images/musica.png" alt="Foto de um Microfone">
+        </div>
+    </section>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script src="scripts/main.js"></script>
 </body>
 </html>

@@ -1,0 +1,63 @@
+@use 'variaveis';
+.evento {
+    padding: 80px 0;
+
+    &--comida {
+        background-image: linear-gradient(to top left, variaveis.$corCinzaEscuro, variaveis.$corPreta);
+    }
+
+    &--bebida {
+        background-image: linear-gradient(to bottom right, variaveis.$corCinzaEscuro, variaveis.$corPreta);
+    }
+
+    &--musica {
+        background-image: linear-gradient(to top left, variaveis.$corCinzaEscuro, variaveis.$corPreta);
+    }
+
+    &--imagem-esquerda {
+        .container {
+            flex-direction: row-reverse;
+        }
+    }
+
+    .container {
+        display: flex;
+        gap: 40px;
+    }
+
+    &__imagem {
+        max-width: 360px;
+        border-radius: 8px;
+    }
+
+    &__cardapio {
+        color: variaveis.$corBranca;
+
+        &__titulo {
+            font-size: 18px;
+            font-weight: bold;
+            margin-bottom: 16px;
+
+        }
+
+        &__descricao {
+            font-size: 16px;
+            line-height: 22px;
+        }
+    }
+
+    @media (max-width: 640px) {
+        .container {
+            display: block;
+        }
+
+        &__imagem {
+            width: 100%;
+        }
+
+        &__cardapio {
+            margin-right: 0;
+            margin-bottom: 16px;
+        }
+    }
+}

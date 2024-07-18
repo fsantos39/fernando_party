@@ -1,3 +1,5 @@
+@use '../variaveis';
+
 .button {
     padding: 12px;
     font-size: 14px;
@@ -7,8 +9,8 @@
     white-space: nowrap;
     
     &--primario {
-        color: #fff;
-        background-color: #00b4d8;
+        color: variaveis.$corBranca;
+        background-color: variaveis.$corBotao;
         border-radius: 4px;
     }
 

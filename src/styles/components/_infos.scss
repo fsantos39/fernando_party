@@ -1,6 +1,8 @@
+@use '../variaveis';
+
 .infos {
     padding: 16px 24px;
-    background-color: #fff;
+    background-color: variaveis.$corBranca;
     display: flex;
     border-radius: 8px;
     justify-content: space-between;
@@ -11,7 +13,7 @@
 
         &__info {
             font-size: 14px;
-            color: #000;
+            color: variaveis.$corPreta;
 
             b {
                 font-size: 18px;
